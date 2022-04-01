@@ -12,7 +12,7 @@ body { margin: auto;}
 a {text-decoration: none;}
 
 main { 
-    margin: 15px 50px;
+    margin: 0px 50px;
 
 }
 
@@ -30,9 +30,9 @@ header {
 }
 
 #logo img{
-    width: 35%;
+    width: 40%;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 15%;
 }
 
@@ -54,20 +54,25 @@ nav ul {
 }
 
 nav li{
-    padding: 0px 40px;
+    padding: 0px 50px;
+    
 }
 
+nav a {
+    padding: 50px 20px 0px 20px;
+}
 
-
-nav a:hover{
+nav a:hover {
     border-top: #0065FC solid;
+   
+    
 }
 
 
 /* Research */
 
 #research-section {
-    margin: 0px 20px;
+    margin: 0px 20px 40px 0px;
 }
 
 #research-heading {  
@@ -209,6 +214,7 @@ nav a:hover{
 #hebergements {
     display: flex;
     
+    
 }
 
 #heb-1-main {
@@ -216,8 +222,8 @@ nav a:hover{
     background-color: #f2f2f2;
     
     border-radius: 25px;
-    flex: 3;
-    margin-right: 20px;
+    flex: 5;
+    
     
 
     
@@ -225,25 +231,25 @@ nav a:hover{
 
 #heb-1-main h2{
     padding: 25px 30px 0px 30px   ;
-    font-size: 150%;
+    font-size: 135%;
 } 
 
 #heb-1-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px ;
-    justify-content: center;
+    padding: 10px;
+    justify-content: space-around;
 }
 
 .heb-1-cards {
     border: white solid ;
     border-radius: 20px;
     background-color: white;
-    margin: 0px 20px 40px 20px;
     width: 250px;
     height: 200px;  
     box-shadow: #cec6c6 1px 1px 20px;
+    margin-bottom: 30px;
     
     
 }
@@ -261,14 +267,14 @@ nav a:hover{
 .heb-1-text {
     display: flex;
     flex-direction: column;
-    
+    padding-left: 5px;
     
 }
 
 .heb-1-text h3 {
     margin: 0;
     padding: 5px ;
-    font-size: 100%;    
+    font-size: 95%;    
     font-weight: 600;
 }
 
@@ -310,18 +316,18 @@ nav a:hover{
 /* Les plus populaires */
 
 #heb-2-main {
-    flex: 1;
+    flex: 2;
     border:#f2f2f2 solid ;
     background-color: #f2f2f2;
     padding: 25px 30px;
     border-radius: 25px;
-    margin: 0px 10px;
+    margin: 0px 10px 0px 50px;
     
     
 }
 
 #heb-2-main h2 {
-    font-size: 150%;
+    font-size: 135%;
 }
 
 
@@ -350,10 +356,10 @@ nav a:hover{
     border: white solid ;
     border-radius: 20px;
     background-color: white;
-    margin: 20px 10px;
-    padding: 0;
-    width: 300px;
-    height: 150px;
+    margin: 10px 10px 20px 10px;
+    padding-right: 30px;
+    width: 350px;
+    height: 140px;
     box-shadow: #cec6c6 1px 1px 20px;
     display: flex;
     flex-direction: row;
@@ -361,7 +367,7 @@ nav a:hover{
 
 .heb-2-img {
     width: 125px;
-    height: 145px; 
+    height: 135px; 
     border: white solid 1px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -372,23 +378,25 @@ nav a:hover{
 .heb-2-card-content {
     display: flex;
     flex-direction: column;
-    margin: 10px 5px 0px 5px;
-    justify-content: space-around;
+    margin: 10px 0px 0px 5px;
+    justify-content: space-between;
     
 }
 
-.heb-2-title h3{
+
+.heb-2-text h3{
     margin: 0;
     font-size: 100%;    
     font-weight: 600;
-    padding-top: 0;
 }
 
-.heb-2-p p {
+
+.heb-2-text p {
     font-size: 90%;   
     font-weight: 300;
+    padding: 0;
 }
-.heb-2-p strong {
+.heb-2-text strong {
 font-weight: 600;
 }
 
@@ -400,7 +408,143 @@ font-weight: 600;
     padding: 0px 0px 5px 0px;
     font-size: 75%;
     
-    
-    
+}
 
+/* Activités à Marseille */
+
+/*Général */
+
+#activite {
+    margin: 75px 0px 50px 0px;
+}
+
+#activite-content {
+    display: flex;   
+    
+}
+
+#activite-card-1, #activite-card-2, #activite-card-3, #activite-card-4, #activite-card-5, #activite-card-6 {
+    display: flex;
+    flex-direction: column;    
+    width: 90%;
+}
+
+#activite-card-1-text, #activite-card-2-text, #activite-card-3-text, #activite-card-4-text, #activite-card-5-text, #activite-card-6-text {
+    border: white solid ;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: #cec6c6 1px 1px 20px;
+    
+}
+
+#activite-card-1-img, #activite-card-2-img , #activite-card-3-img , #activite-card-4-img , #activite-card-5-img , #activite-card-6-img {
+    border-radius: 20px 20px 0px 0px;   
+    
+}
+
+#activite-card-1-text, #activite-card-2-text, #activite-card-3-text, #activite-card-4-text, #activite-card-5-text, #activite-card-6-text {
+    font-size: 85%;
+    padding-left: 20px;
+}
+
+/* Activité : partie gauche */
+
+#activite-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /*background-color: #0065FC;*/
+
+}
+
+#activite-1-main {
+    flex : 1;
+    /*background-color: red;*/
+    width: 350px;
+}
+
+#activite-1-second {
+    flex: 1;
+    /*background-color: green;*/
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#activite-card-1-img, #activite-card-4-img {   /*1ère image carte partie gauche ET partie droite */
+    height: 400px;
+    object-fit: cover;
+}
+
+#activite-card-2-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#activite-card-3-img {
+    height: 100px;
+    object-fit: cover;
+}
+
+
+/* Activité : partie droite */
+
+#activite-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#activite-2-main {
+    flex : 1;
+    width: 350px;
+    /*background-color: aqua;*/
+}
+
+#activite-2-second {
+    flex: 1;
+    width: 350px;
+    /*background-color: rebeccapurple;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#activite-card-5-img , #activite-card-6-img {
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 30px 20px;
+    
+}
+
+.footer-content {
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-content h3 {
+    padding-left: 40px;
+}
+.footer-content ul{
+    list-style-type: none;
+}
+
+.footer-content li {
+    padding-bottom: 15px;
+    cursor: pointer;
 }
