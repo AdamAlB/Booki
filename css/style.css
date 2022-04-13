@@ -116,7 +116,7 @@ section { margin: 50px 0px;}
     height: 50px;
     width: 50%;
     max-width: 250px;
-    min-width: 160px;
+    min-width: 175px;
     border: #f2f2f2 solid 1px;
     font-size: 112%;
     font-weight: bold;
@@ -247,7 +247,7 @@ section { margin: 50px 0px;}
 }
 
 .heb-1-heading {
-    padding: 50px 50px 25px 50px;
+    padding: 40px 25px;
 }
 
 .heb-1-heading h2 {
@@ -256,9 +256,7 @@ section { margin: 50px 0px;}
 
 .heb-1-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px 20px;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -454,11 +452,11 @@ font-weight: 600;
 
 .activite-content {
     margin: 0px 0px 50px 0px;
+    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     
     
 }
@@ -469,7 +467,7 @@ font-weight: 600;
 .activite-1, .activite-2 ,  .activite-3 , .activite-4 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 20%;
     margin: 0px 20px;
    
     
@@ -575,31 +573,27 @@ footer {
 
     
 
-
-
-
-@media screen and (max-width : 992px) {
-
-
+@media screen and (max-width : 1170px) {
 
     main {
         margin: 0;
     }
-
-    .head-link-1 a {
-        border-top: #0065FC solid;
-    }
+    
 
     .research-section {
         margin-left: 50px;
     }
  
+
     .hebergements {
         display: flex;
         flex-direction: column-reverse;
 
     }
    
+    .heb-1-heading {
+        padding: 40px 0px;
+    }
 
     .heb-1-main {
         background-color: white;
@@ -607,8 +601,11 @@ footer {
         border-radius: 0 ;
         margin: 0;
         padding: 0px 50px;
-
     }  
+
+    .afficher-plus {
+        margin: 0;
+    }
 
 
 
@@ -634,26 +631,46 @@ footer {
  
      .heb-2-content {
          display: flex;
-         flex-direction: column;
-        
+         flex-flow: column wrap;
+            
      }
+
+    
+    
 
      .activite {
-         margin: 0px 50px;
-     }
+        margin: 0px 25px;
+    }
 
-     .activite-content {
-         justify-content: space-around;
-     }
+    .activite-content {
+        justify-content: center;
+        flex-direction: column;
 
     }
 
+    .activite-1, .activite-2, .activite-3, .activite-4 {
+        width: 75%;
+        min-width: 300px;
+    }
+    .activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
+        height: 175px;
+    }
+
+   }
+    
+
+
+
+@media screen and (max-width : 992px) {
 
 
 
    
-    
-    
+
+    .head-link-1 a {
+        border-top: #0065FC solid;
+    }
+
 
     .filters {
         flex-direction: column;
@@ -678,7 +695,7 @@ footer {
 
    
 
-   
+}
 
 
 @media screen and (max-width : 768px) {
@@ -788,5 +805,26 @@ nav a {
         border-radius: 15px;
        
     }
+
+.heb-1-content {
+    flex-direction: column;
+    
+    
+}
+
+.heb-1-content article {
+    margin-bottom: 30px;
+}
+
+.heb-1-cards {
+   margin: 0;
+   padding: 0;
+    width: 80%;
+    min-width: 300px
+}
+
+.footer-content {
+    margin-right: 75px;
+}
 
 }
