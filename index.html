@@ -21,10 +21,10 @@
             <nav>
                     <ul>
                         <li>
-                            <div class="head-link-1"><a href="#" >Hébergements</a></div>
+                            <div class="head-link-1"><a href="#hebergements" >Hébergements</a></div>
                         </li>
                         <li>
-                            <div class="head-link-2"><a href="#" >Activités</a></div>
+                            <div class="head-link-2"><a href="#activite" >Activités</a></div>
                         </li>
                     </ul>
                     
@@ -42,7 +42,8 @@
                 <form method="post" action="traitement.php" class="form">
                     <label class="research-img"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="location" class="location" value="Marseille, France"/>
-                    <input type="button" class="research-button" value="Rechercher"/>
+                    <button class="research-button">Rechercher</button>
+                    <button class="research-loop"><i class="fas fa-search"></i></button>
 
                 </form>
             </div>
@@ -85,7 +86,7 @@
             </div>
         </section>
         <section>
-        <div class="hebergements">
+        <div class="hebergements" id="hebergements">
             <div class="heb-1-main">
                 <div class="heb-1-heading">
                 
@@ -342,7 +343,7 @@
         </section>
 
         <section>
-        <div class="activite">
+        <div class="activite" id="activite">
             <div class="activite-heading">
                 <h2>Activités à Marseille</h2>
             </div>
