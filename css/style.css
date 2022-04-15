@@ -336,7 +336,7 @@ section { margin: 50px 0px;}
 
 .heb-2-main {
     flex: 1;
-    border:#f2f2f2 solid ;
+    
     background-color: #f2f2f2;
     padding: 25px 30px;
     border-radius: 25px;
@@ -378,8 +378,7 @@ section { margin: 50px 0px;}
     border: white solid ;
     border-radius: 20px;
     background-color: white;
-    margin: 10px 10px 20px 10px;
-    padding-right: 30px;
+    margin: 15px 0px;
     width: 350px;
     height: 140px;
     box-shadow: #cec6c6 1px 1px 20px;
@@ -478,6 +477,8 @@ font-weight: 600;
 
 .activite-1, .activite-2a, .activite-2b, .activite-3, .activite-4a, .activite-4b {
     margin-bottom: 25px;
+    box-shadow: #cec6c6 1px 1px 20px;
+    border-radius: 20px;
 }
 .activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
     border-radius: 20px 20px 0px 0px;   
@@ -485,8 +486,19 @@ font-weight: 600;
     object-fit: cover;
     margin: 0;
     display: flex;
-    
-       
+}
+
+.activite-1-img {
+    object-position: 50% 25%;
+
+}
+
+.activite-4a-img {
+    object-position: 50% 10%
+}
+
+.activite-4b-img {
+    object-position: 50% 40%;
 }
 
  .activite-1 h3, .activite-2a h3, .activite-2b h3, .activite-3 h3, .activite-4a h3, .activite-4b h3 {
@@ -496,7 +508,7 @@ font-weight: 600;
     padding: 0px 15px;
     border-radius: 0px 0px 20px 20px;
     border: white solid ;
-    box-shadow: #cec6c6 1px 1px 20px;
+    
     margin: 0;                
     display: flex;
     align-items:center;
@@ -620,23 +632,24 @@ footer {
          padding: 0;
          margin: 0;
          width: 100%;
+         border-radius: 0;
      }
     
  
  
-     .heb-2-main {
-         
-         border-radius: 0;
+    
      }
  
      .heb-2-content {
          display: flex;
-         flex-flow: column wrap;
+         flex-flow: row wrap;
             
      }
 
     
-    
+    .heb-2-cards article{
+        width: 100%;
+    }
 
      .activite {
         margin: 0px 25px;
@@ -656,7 +669,7 @@ footer {
         height: 175px;
     }
 
-   }
+   
     
 
 
@@ -792,6 +805,7 @@ nav a {
         justify-content: center;
         align-items: center;
         color: white;
+        cursor: pointer;
     }
     
 .research-loop {
@@ -819,8 +833,9 @@ nav a {
 .heb-1-cards {
    margin: 0;
    padding: 0;
-    width: 80%;
-    min-width: 300px
+    width: 100%;
+    min-width: 250px;
+    align-items: center;
 }
 
 .footer-content {
