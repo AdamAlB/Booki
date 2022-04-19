@@ -3,14 +3,11 @@
     font-family: "Raleway", sans-serif;
     color: black; 
     box-sizing: border-box;
-    max-width: 3000px;
+   
     
 }
 
 
-body {
-    overflow-anchor: auto;
-}
 
 
 a {text-decoration: none;}
@@ -69,7 +66,7 @@ nav a {
 
 section { margin: 50px 0px;}
 
-/* Research */
+/* Section Research */
 
 
 .research-section {
@@ -112,6 +109,7 @@ section { margin: 50px 0px;}
 
     
 }
+
 .location {
     height: 50px;
     width: 50%;
@@ -142,9 +140,9 @@ section { margin: 50px 0px;}
     display: none;
 }
 
+/* Le bouton de recherche composé d'une icône sera configurée dans les media queries en dessous de 768px */
 
-
-/* Filtres */
+/* Partie Filtres */
 
 
 
@@ -168,6 +166,9 @@ section { margin: 50px 0px;}
             flex-wrap: wrap;
             }
 
+/* i-filters : filtres comprenant l'icône ainsi que le texte */
+
+
 .i-filters { display: flex;
             flex-direction: row; 
             border: #DEEBFF solid 2px;
@@ -180,7 +181,7 @@ section { margin: 50px 0px;}
     cursor: pointer;
 }
 
-.i-filters-img i{
+.i-filter-img i{
     height: 50px;
     width: 50px;
     border:#DEEBFF solid;
@@ -195,7 +196,7 @@ section { margin: 50px 0px;}
 
 }   
 
-.filter-text {
+.i-filter-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,12 +205,15 @@ section { margin: 50px 0px;}
 
 }
 
+/* Paragraphe de fin de la section Research */
 
 .end-filters {
     display: flex;
     flex-direction: row;
     align-items: center;
 }   
+
+/* Icône "information" */
 
 .i-end-filters i {
     border:#f2f2f2 solid 2px;
@@ -232,7 +236,7 @@ section { margin: 50px 0px;}
        
 }
 
-
+/* heb-1 : partie gauche de la section Hébergements */
 
 .heb-1-main {
     border:#f2f2f2 solid ;
@@ -264,7 +268,7 @@ section { margin: 50px 0px;}
     border: white solid ;
     border-radius: 20px;
     background-color: white;
-    width: 250px;
+    width: 275px;
     height: 200px;  
     box-shadow: #cec6c6 1px 1px 20px;
     margin: 0px 10px 30px 10px;
@@ -334,6 +338,8 @@ section { margin: 50px 0px;}
 
 /* Les plus populaires */
 
+/* heb-2 : partie droite de la section Hébergements */
+
 .heb-2-main {
     flex: 1;
     
@@ -345,11 +351,12 @@ section { margin: 50px 0px;}
     
 }
 
-.heb-2-main h2 {
+
+.heb-2-head-i h2 {
     font-size: 150%;
 }
 
-
+/* Balise contenant le titre et l'icône */
 
 .heb-2-head-i {
     display: flex;
@@ -359,7 +366,7 @@ section { margin: 50px 0px;}
 }
 
 
-
+/* Balise contenant l'icône */
 
 .heb-2-i i{
     font-size: 150%;
@@ -371,6 +378,7 @@ section { margin: 50px 0px;}
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-shrink: 1;
     
 }
 
@@ -378,8 +386,8 @@ section { margin: 50px 0px;}
     border: white solid ;
     border-radius: 20px;
     background-color: white;
-    margin: 15px 0px;
-    width: 350px;
+    margin: 15px 5px;
+    min-width: 350px;
     height: 140px;
     box-shadow: #cec6c6 1px 1px 20px;
     display: flex;
@@ -431,9 +439,9 @@ font-weight: 600;
     
 }
 
-/* Activités à Marseille */
+/* Section Activités  */
 
-/*Général */
+
 
 .activite h2 {
     margin: 0;
@@ -450,7 +458,7 @@ font-weight: 600;
 }
 
 .activite-content {
-    margin: 0px 0px 50px 0px;
+    margin: 25px 0px 50px 0px;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
@@ -467,26 +475,45 @@ font-weight: 600;
     display: flex;
     flex-direction: column;
     width: 20%;
-    margin: 0px 20px;
-   
+    margin: 0;
+    padding: 0;
     
     
 }
 
-
+/* Les balises .activite-2 et .activite-4 contiennent chacunes deux activités (.activite-2a, 2b ... */
 
 .activite-1, .activite-2a, .activite-2b, .activite-3, .activite-4a, .activite-4b {
-    margin-bottom: 25px;
+    
     box-shadow: #cec6c6 1px 1px 20px;
     border-radius: 20px;
 }
+
+.activite-2a {
+    margin-bottom: 20px;
+}
+
+.activite-2b {
+    margin-top: 20px;
+}
+
+.activite-4a {
+    margin-bottom: 25px;
+}
+.activite-4b {
+    margin-top: 25px;
+}
+
 .activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
     border-radius: 20px 20px 0px 0px;   
     width: 100%;
     object-fit: cover;
     margin: 0;
+    padding: 0;
     display: flex;
 }
+
+/* Ajustement des images  */
 
 .activite-1-img {
     object-position: 50% 25%;
@@ -541,14 +568,15 @@ footer {
 }
 .footer {
     display: flex;
-    flex-direction: row;
-    padding: 30px;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px 0px;
+    
     
 }
 
 .footer-content {
-    margin: 0px 200px 0px 50px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -574,6 +602,9 @@ footer {
 
 
 @media screen and (min-width : 993px) { 
+
+    /* Permet l'effet au survol des deux éléments de l'entête de page uniquement en version desktop */
+
     nav a:hover {
         border-top: #0065FC solid;
        
@@ -584,19 +615,21 @@ footer {
 }
 
     
+/* Toujours en version desktop ajusté pour les écrans plus petits */
 
-@media screen and (max-width : 1170px) {
+@media screen and (max-width : 1180px) {
 
     main {
         margin: 0;
     }
-    
+
+/* Section research */
 
     .research-section {
         margin-left: 50px;
     }
  
-
+/* Section hébergements */
     .hebergements {
         display: flex;
         flex-direction: column-reverse;
@@ -612,7 +645,7 @@ footer {
         border: 0;
         border-radius: 0 ;
         margin: 0;
-        padding: 0px 50px;
+        padding: 0px 25px;
     }  
 
     .afficher-plus {
@@ -621,15 +654,12 @@ footer {
 
 
 
-    .heb-2-head-i {
-        padding: 10px 50px;
-    }
- 
+    
                                       
  
-     .heb-2-main {
+    .heb-2-main {
          
-         padding: 0;
+         padding: 10px 25px;
          margin: 0;
          width: 100%;
          border-radius: 0;
@@ -637,53 +667,54 @@ footer {
     
  
  
-    
-     }
+   
  
-     .heb-2-content {
-         display: flex;
+     .heb-2-content { 
+        
          flex-flow: row wrap;
             
      }
 
     
-    .heb-2-cards article{
-        width: 100%;
-    }
+/* Section Activités */
 
-     .activite {
-        margin: 0px 25px;
+    .activite {
+        margin: 0px 20px;
     }
 
     .activite-content {
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: row wrap;
 
     }
 
     .activite-1, .activite-2, .activite-3, .activite-4 {
-        width: 75%;
+        width: 40%;
         min-width: 300px;
     }
-    .activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
-        height: 175px;
+    
+    .activite-1, .activite-2 {
+        margin-bottom: 40px;
     }
-
-   
+   }
     
 
+
+/* Version Tablette */
 
 
 @media screen and (max-width : 992px) {
 
 
-
+/* Header : lien "Hébergements" */
    
 
     .head-link-1 a {
         border-top: #0065FC solid;
     }
 
+/* Section Research */
 
     .filters {
         flex-direction: column;
@@ -710,8 +741,11 @@ footer {
 
 }
 
+/* Version mobile */
 
 @media screen and (max-width : 768px) {
+
+/* Header */
 
 header {
     flex-direction: column;
@@ -792,6 +826,8 @@ nav a {
   
 }
 
+/* Section Research */
+
 .research-section {
     margin-left : 20px;
 }
@@ -820,6 +856,9 @@ nav a {
        
     }
 
+/* Section Hébergements */
+
+
 .heb-1-content {
     flex-direction: column;
     
@@ -834,12 +873,37 @@ nav a {
    margin: 0;
    padding: 0;
     width: 100%;
-    min-width: 250px;
+    min-width: 300px
+}
+
+.heb-2-cards {
+    min-width: 300px;
+}
+
+/* Section Activités */
+
+.activite-content {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.footer-content {
-    margin-right: 75px;
+.activite-1, .activite-2, .activite-3, .activite-4 {
+    width: 100%;
+}
+
+.activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
+    height: 200px;
+}
+
+.activite-3 {
+    margin-bottom: 40px;
+}
+
+/* Footer */
+
+.footer {
+    flex-flow: column wrap;
 }
 
 }
