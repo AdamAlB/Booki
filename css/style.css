@@ -652,8 +652,22 @@ footer {
         margin: 0;
     }
 
+    .heb-1-content article {
+        margin-bottom: 30px;
+    }
+    
+    
+    
+    .heb-2-cards {
+        min-width: 300px;
+    }
 
-
+    .heb-1-cards {
+        margin: 0;
+        padding: 0;
+         width: 50%;
+         min-width: 300px
+     }
     
                                       
  
@@ -856,40 +870,19 @@ nav a {
        
     }
 
-/* Section Hébergements */
 
 
-.heb-1-content {
-    flex-direction: column;
-    
-    
-}
-
-.heb-1-content article {
-    margin-bottom: 30px;
-}
-
-.heb-1-cards {
-   margin: 0;
-   padding: 0;
-    width: 100%;
-    min-width: 300px
-}
-
-.heb-2-cards {
-    min-width: 300px;
-}
 
 /* Section Activités */
 
 .activite-content {
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
 }
 
 .activite-1, .activite-2, .activite-3, .activite-4 {
-    width: 100%;
+    width: 51%;
 }
 
 .activite-1-img, .activite-2a-img, .activite-2b-img, .activite-3-img, .activite-4a-img, .activite-4b-img {
@@ -903,7 +896,7 @@ nav a {
 /* Footer */
 
 .footer {
-    flex-flow: column wrap;
+    justify-content: flex-start;
 }
 
 }
