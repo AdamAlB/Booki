@@ -692,8 +692,8 @@ footer {
     
 /* Section Activités */
 
-    .activite {
-        margin: 0px 20px;
+    .activite-heading {
+        margin: 20px;
     }
 
     .activite-content {
