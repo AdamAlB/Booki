@@ -653,24 +653,17 @@ footer {
         margin: 0;
     }
 
-    .heb-1-content article {
-        margin: 15px;
-        
-    }
     
-    
-    
-    .heb-2-cards {
-        min-width: 300px;
-        width: 100%;
-    }
-
     .heb-1-cards {
-        margin: 0;
+        margin: 15px;
         padding: 0;
          width: 50%;
          min-width: 300px
      }
+    
+    
+    
+    
     
                                       
  
