@@ -261,7 +261,7 @@ section { margin: 50px 0px;}
 .heb-1-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .heb-1-cards {
@@ -646,6 +646,7 @@ footer {
         border-radius: 0 ;
         margin: 0;
         padding: 0px 25px;
+        
     }  
 
     .afficher-plus {
@@ -653,13 +654,15 @@ footer {
     }
 
     .heb-1-content article {
-        margin-bottom: 30px;
+        margin: 15px;
+        
     }
     
     
     
     .heb-2-cards {
         min-width: 300px;
+        width: 100%;
     }
 
     .heb-1-cards {
