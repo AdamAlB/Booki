@@ -427,8 +427,12 @@ section { margin: 50px 0px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
     
+    
+}
+
+.heb-2-head-i h2 {
+    padding: 20px 0px;
 }
 
 
@@ -784,13 +788,16 @@ footer {
     .activite-1, .activite-2 {
         margin-bottom: 40px;
     }
-   }
+   
     
 /* Conteneurs des titres des sections */
 
 .heb-1-heading , .heb-2-head-i , .activite-heading {
     padding-left: 25px;
 }
+
+}
+
 
 /* Version Tablette */
 
