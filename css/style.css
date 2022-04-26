@@ -1,9 +1,60 @@
-/* General */
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------- GENERAL----------------------------------------- */
+
+
+
 *{
-    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;  
     color: black; 
-    box-sizing: border-box;
-   
+    
+}
+
+body {
+    font-family: "Raleway", sans-serif;
     
 }
 
@@ -23,23 +74,27 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: row;
     height: 125px;
     
 
 }
 
-.logo img{
+
+.logo img {
     width: 40%;
     position: relative;
     top: 40%;
-    left: 15%;
+    left: 20%;
 }
-
 
 
 nav {
     display: flex;
+    justify-content: flex-end;
+    
+    
+
     
     }
 
@@ -70,7 +125,7 @@ section { margin: 50px 0px;}
 
 
 .research-section {
-    margin-top: 0;
+    margin-top: 15px;
 }
 .research-heading {  
                     display: flex;
@@ -79,11 +134,14 @@ section { margin: 50px 0px;}
 
 
 .research-heading h1 {
+    font-weight: bold;
     font-size: 150%;
 }
 
-.p1 { font-size: 110%;
-    margin-top: auto;
+.research-heading p {   
+        font-size: 100%;
+        padding-top: 10px;
+    
 
   }
 
@@ -154,7 +212,11 @@ section { margin: 50px 0px;}
    
 }
 
+.filters-title h3 {
+    font-size: 100%;
+    font-weight: bold;
 
+}
 
 
 .filters li {
@@ -256,6 +318,7 @@ section { margin: 50px 0px;}
 
 .heb-1-heading h2 {
     font-size: 150%;
+    font-weight: bold;
     margin: 0; }
 
 .heb-1-content {
@@ -275,6 +338,7 @@ section { margin: 50px 0px;}
     
     
     
+    
 }
 
 .heb-1-img {
@@ -290,7 +354,7 @@ section { margin: 50px 0px;}
 .heb-1-text {
     display: flex;
     flex-direction: column;
-    padding: 5px 0px 0px 10px;
+    padding: 7px 0px 0px 10px;
     
 }
 
@@ -303,7 +367,7 @@ section { margin: 50px 0px;}
 
 .heb-1-text p {
     margin: 0;
-    padding-bottom:  10px ; 
+    padding: 5px 0px 10px 0px; 
     font-size: 90%;   
     font-weight: 300;
 }
@@ -354,6 +418,7 @@ section { margin: 50px 0px;}
 
 .heb-2-head-i h2 {
     font-size: 150%;
+    font-weight: bold;
 }
 
 /* Balise contenant le titre et l'icône */
@@ -362,6 +427,7 @@ section { margin: 50px 0px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0px;
     
 }
 
@@ -423,7 +489,7 @@ section { margin: 50px 0px;}
 .heb-2-text p {
     font-size: 90%;   
     font-weight: 300;
-    padding: 0;
+    padding: 15px 0px;
 }
 .heb-2-text strong {
 font-weight: 600;
@@ -445,6 +511,8 @@ font-weight: 600;
 
 .activite h2 {
     margin: 0;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 .activite {
@@ -532,6 +600,7 @@ font-weight: 600;
     
     height: 55px;
     font-size: 100%;
+    font-weight: bold;
     padding: 0px 15px;
     border-radius: 0px 0px 20px 20px;
     border: white solid ;
@@ -575,6 +644,14 @@ footer {
     
 }
 
+.footer-heading h3 {
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.footer-heading {
+    margin: 25px 0px;
+}
 .footer-content {
     margin-left: 50px;
     display: flex;
@@ -709,7 +786,11 @@ footer {
     }
    }
     
+/* Conteneurs des titres des sections */
 
+.heb-1-heading , .heb-2-head-i , .activite-heading {
+    padding-left: 25px;
+}
 
 /* Version Tablette */
 
@@ -866,10 +947,18 @@ nav a {
        
     }
 
+/* Section Hébergements */
 
+.heb-1-heading {
+    padding: 40px 0px 15px 0px;
+}
 
 
 /* Section Activités */
+
+.activite-heading h2    {
+    padding-left: 5px;
+}
 
 .activite-content {
     
@@ -887,6 +976,13 @@ nav a {
 
 .activite-3 {
     margin-bottom: 40px;
+}
+
+/* Conteneurs des titres des sections */
+
+.heb-1-heading , .heb-2-head-i , .activite-heading {
+    padding-left: 0;
+
 }
 
 /* Footer */
