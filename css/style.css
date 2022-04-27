@@ -356,7 +356,7 @@ nav a {
 .i-filter-img i {
     height: 50px;
     width: 50px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -880,6 +880,7 @@ footer {
     .heb-1-content {
         justify-content: space-around;
     }
+
     .afficher-plus {
         margin: 10px 0px 0px 10px;
     }
